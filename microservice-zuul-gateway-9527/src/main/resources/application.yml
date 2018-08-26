@@ -1,0 +1,30 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservice-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka9000.com:9000/eureka/,http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
+  instance:
+    instance-id: gateway-9527.com   #自定义服务名称信息
+    prefer-ip-address: true   #访问路径可以显示IP地址
+
+
+
+
+info:
+  app.name: xxm-microservice
+  company.name: www.xxm.cn
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+
+
+zuul:
+  prefix: "/xxm"
+  ignored-services: "*"
+  routes:
+    myuser.serviceId: microservice-provider-user
+    myuser.path: /myuser/**

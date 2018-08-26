@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          username: imxxmhaha
+          password: xxm19930128.
+          uri: git@github.com:imxxmhaha/microservicecloud-config.git #GitHub上面git仓库的地址

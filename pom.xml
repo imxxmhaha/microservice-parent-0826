@@ -12,6 +12,15 @@
         <module>microservice-provider-user</module>
         <module>microservice-consumer-user</module>
         <module>microservice-eureka</module>
+        <module>microservice-eureka-9001</module>
+        <module>microservice-eureka-9002</module>
+        <module>microservice-provider-user-8002</module>
+        <module>microservice-provider-user-8001</module>
+        <module>microservice-consumer-user-feign</module>
+        <module>microservice-provider-user-hystrix-8001</module>
+        <module>microservice-consumer-hystrix-dashboard</module>
+        <module>microservice-zuul-gateway-9527</module>
+        <module>microservice-config-3344</module>
     </modules>
     <packaging>pom</packaging>
 

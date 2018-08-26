@@ -1,0 +1,36 @@
+#项目容器端口
+server:
+  port: 8002
+spring:
+  application:
+    name: microservice-provider-user
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/pinyougoudb02?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#mybatis配置文件位置,以及dao  xxx.xml配置文件
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mappers/*.xml
+  type-aliases-package: cn.xxm.springcloud.pojo
+
+
+eureka:
+  client:  #客户端注册进eureka服务器列表内
+    service-url:
+#      defaultZone: http://localhost:9000/eureka
+      defaultZone: http://eureka9000.com:9000/eureka/,http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
+  instance:
+    instance-id: microservice-provider8002   #自定义服务名称信息
+    prefer-ip-address: true   #访问路径可以显示IP地址
+
+info:
+  app.name: xxm-microservice
+  company.name: www.xxm.cn
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+

@@ -1,15 +1,15 @@
+#项目容器端口
+server:
+  port: 8001
 spring:
+  application:
+    name: microservice-provider-user
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/pinyougoudb?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/pinyougoudb01?characterEncoding=utf-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-
-#项目容器端口
-  port: 8080
-  application:
-    name: microservice-provider-user
 
 
 #mybatis配置文件位置,以及dao  xxx.xml配置文件
@@ -22,9 +22,10 @@ mybatis:
 eureka:
   client:  #客户端注册进eureka服务器列表内
     service-url:
-      defaultZone: http://localhost:9000/eureka
+#      defaultZone: http://localhost:9000/eureka
+      defaultZone: http://eureka9000.com:9000/eureka/,http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
   instance:
-    instance-id: microservice-provider8080   #自定义服务名称信息
+    instance-id: microservice-provider8001   #自定义服务名称信息
     prefer-ip-address: true   #访问路径可以显示IP地址
 
 info:

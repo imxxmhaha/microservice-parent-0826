@@ -28,6 +28,7 @@ public class UserController {
     @GetMapping("/getUser/{id}")
     public User getUser(@PathVariable("id") Long id){
         User user = userService.findOne(id);
+//        throw new  RuntimeException();
         return user;
     }
 

@@ -17,7 +17,8 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/consumer/user")
 public class UserController_Consumer {
 
-    public static final String REST_URL_PREFIX="http://localhost:8080/";
+//    public static final String REST_URL_PREFIX="http://localhost:8080/";
+    public static final String REST_URL_PREFIX="http://MICROSERVICE-PROVIDER-USER/";
 
     @Autowired
     private RestTemplate restTemplate;

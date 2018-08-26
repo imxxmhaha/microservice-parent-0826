@@ -2,14 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-api" />
+        <module name="microservice-config-3344" />
+        <module name="microservice-consumer-hystrix-dashboard" />
         <module name="microservice-consumer-user" />
+        <module name="microservice-consumer-user-feign" />
         <module name="microservice-eureka" />
+        <module name="microservice-eureka-9001" />
+        <module name="microservice-eureka-9002" />
         <module name="microservice-provider-user" />
+        <module name="microservice-provider-user-8001" />
+        <module name="microservice-provider-user-8002" />
+        <module name="microservice-provider-user-hystrix-8001" />
+        <module name="microservice-zuul-gateway-9527" />
       </profile>
     </annotationProcessing>
   </component>
