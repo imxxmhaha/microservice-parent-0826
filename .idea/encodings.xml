@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-config-3344" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-config-client-3355" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-config-eureka-client-9001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-config-user-client-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-consumer-hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-consumer-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-consumer-user-feign" charset="UTF-8" />

@@ -21,6 +21,9 @@
         <module>microservice-consumer-hystrix-dashboard</module>
         <module>microservice-zuul-gateway-9527</module>
         <module>microservice-config-3344</module>
+        <module>microservice-config-client-3355</module>
+        <module>microservice-config-eureka-client-9001</module>
+        <module>microservice-config-user-client-8001</module>
     </modules>
     <packaging>pom</packaging>
 

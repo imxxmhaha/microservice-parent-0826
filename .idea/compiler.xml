@@ -9,6 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-api" />
         <module name="microservice-config-3344" />
+        <module name="microservice-config-client-3355" />
+        <module name="microservice-config-eureka-client-9001" />
+        <module name="microservice-config-user-client-8001" />
         <module name="microservice-consumer-hystrix-dashboard" />
         <module name="microservice-consumer-user" />
         <module name="microservice-consumer-user-feign" />
